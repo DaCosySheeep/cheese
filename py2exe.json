@@ -18,6 +18,10 @@
    "value": false
   },
   {
+   "optionDest": "name",
+   "value": "Cheese-2.0"
+  },
+  {
    "optionDest": "clean_build",
    "value": false
   },

@@ -1,4 +1,4 @@
-('/run/user/1000/gvfs/smb-share:server=dacosydesktop,share=users/tjgor/Documents/Programming/cheese/build/main/PYZ-00.pyz',
+('/run/user/1000/gvfs/sftp:host=dacosydesktop/C:/Users/tjgor/Documents/Programming/cheese/build/main/PYZ-00.pyz',
  [('PIL', '/usr/lib/python3/dist-packages/PIL/__init__.py', 'PYMODULE'),
   ('PIL.BlpImagePlugin',
    '/usr/lib/python3/dist-packages/PIL/BlpImagePlugin.py',

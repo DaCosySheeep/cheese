@@ -16,12 +16,14 @@ def resource_path(relative_path):
 
 pygame.mixer.init()
 root=Tk()
+root.state('zoomed')
 root.title("Load Cheese")
 root.geometry("40x60")
+
 imageshown=False
 def show_cheese():
     global imageshown
-    r=randint(1,3)
+    r=randint(1,10)
     print(r)
     if imageshown==True:
         root.img.destroy()

@@ -18,7 +18,7 @@ missing module named pyimod02_importers - imported by /home/vboxuser/.local/lib/
 missing module named pep517 - imported by importlib.metadata (delayed)
 missing module named 'org.python' - imported by copy (optional), xml.sax (delayed, conditional)
 missing module named winreg - imported by importlib._bootstrap_external (conditional), pygame.sysfont (conditional), platform (delayed, optional), pkg_resources._vendor.appdirs (delayed, conditional), mimetypes (optional), urllib.request (delayed, conditional, optional)
-missing module named nt - imported by os (delayed, conditional, optional), ntpath (optional), shutil (conditional), importlib._bootstrap_external (conditional), ctypes (delayed, conditional)
+missing module named nt - imported by shutil (conditional), importlib._bootstrap_external (conditional), ntpath (optional), os (delayed, conditional, optional), ctypes (delayed, conditional)
 excluded module named _frozen_importlib - imported by importlib (optional), importlib.abc (optional), zipimport (top-level)
 missing module named _frozen_importlib_external - imported by importlib._bootstrap (delayed), importlib (optional), importlib.abc (optional), zipimport (top-level)
 missing module named _winapi - imported by encodings (delayed, conditional, optional), ntpath (optional), subprocess (optional), mimetypes (optional)
