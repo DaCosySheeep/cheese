@@ -1,7 +1,7 @@
 from tkinter import *
 from random import randint
 from PIL import Image, ImageTk
-import pygame
+import pygame, sys, os
 global imageshown
 
 def resource_path(relative_path):
