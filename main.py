@@ -16,7 +16,8 @@ def resource_path(relative_path):
 
 pygame.mixer.init()
 root=Tk()
-root.state('zoomed')
+#root.state('zoomed')
+root.attributes('-zoomed', True)
 root.title("Load Cheese")
 root.geometry("40x60")
 
