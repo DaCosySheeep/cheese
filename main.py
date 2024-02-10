@@ -4,6 +4,13 @@ from PIL import Image, ImageTk
 import pygame, sys, os
 global imageshown
 
+def resize(xy, xnewsize):
+  x, y = xy
+  newx = xnewsize
+  newy = y*(xnewsize/x)
+  return int(newx),int(newy)
+
+
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
     try:
@@ -33,7 +40,9 @@ def show_cheese():
         print("Imposter")
         if imageshown==True:
             root.img.destroy()
-        render=ImageTk.PhotoImage(Image.open(resource_path(f"images/potato.png")))
+        displayimage = Image.open(resource_path(f"images/potato.png"))
+        displayimage = displayimage.resize(resize(displayimage.size,260))
+        render=ImageTk.PhotoImage(displayimage)
         root.img=Label(root, image=render)
         root.img.image=render
         #img.place(x=10,y =10)
@@ -44,7 +53,10 @@ def show_cheese():
         print(r)
         if imageshown==True:
             root.img.destroy()
-        render=ImageTk.PhotoImage(Image.open(resource_path(f"images/cheese{r}.png")))
+        
+        displayimage = Image.open(resource_path(f"images/cheese{r}.png"))
+        displayimage = displayimage.resize(resize(displayimage.size,260))
+        render=ImageTk.PhotoImage(displayimage)
         root.img=Label(root, image=render)
         root.img.image=render
         #img.place(x=10,y =10)
