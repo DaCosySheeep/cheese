@@ -26,10 +26,10 @@ root.geometry("40x60")
 imageshown=False
 def show_cheese():
     global imageshown
-    r=randint(1,11)
-    if r == 11:
-        r=randint(1,11)
-    if r==11:
+    r=randint(1,34)
+    if r == 34:
+        r=randint(1,34)
+    if r==34:
         print("Imposter")
         if imageshown==True:
             root.img.destroy()
