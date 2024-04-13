@@ -13,8 +13,8 @@
         "type":"image/png",
         "purpose":"maskable"
     }, {
-        "src":"/cheese/images/cheese2.png",
-        "sizes":"1096x1096",
+        "src":"/cheese/images/cheese144x144.png",
+        "sizes":"144x144",
         "type":"image/png",
         "purpose":"any"
     }]
