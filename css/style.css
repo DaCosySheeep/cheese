@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?familky=Nunito:400,700&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,7 @@
 }
 body {
     background: #fdfdfd;
-    font-family: "Nunito", sans-serif;
+    font-family: sans-serif;
     font-size: 1rem;
 }
 main {

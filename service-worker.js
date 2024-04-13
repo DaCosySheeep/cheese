@@ -5,7 +5,8 @@ self.addEventListener('install', function(event) {
                 '/',
                 '/index.html',
                 '/images/',
-                '/sounds/'
+                '/sounds/',
+                '/cheese/'
             ]);
         })
     );
