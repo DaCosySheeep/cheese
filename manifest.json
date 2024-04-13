@@ -12,5 +12,10 @@
         "sizes":"1096x1096",
         "type":"image/png",
         "purpose":"maskable"
+    }, {
+        "src":"/cheese/images/cheese2.png",
+        "sizes":"1096x1096",
+        "type":"image/png",
+        "purpose":"any"
     }]
 }
