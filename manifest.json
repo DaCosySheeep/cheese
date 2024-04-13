@@ -3,20 +3,13 @@
     "short_name":"Cheese",
     "start_url":"/",
     "display":"standalone",
-    "background_color":"#f0f0f0",
+    "background_color":"#fdfdfd",
+    "theme_color":"yellow",
+    "orientation":"portrait-primary",
     "description":"Cheese",
     "icons": [{
         "src":"images/cheese2.png",
-        "sizes":"48x48",
+        "sizes":"1096x1096",
         "type":"image/png"
-    }, {
-        "src":"images/cheese2.png",
-        "sizes": "48x48"
-    }, {
-        "src":"images/cheese2.png",
-        "sizes":"72x72 96x96 128x128 256x256"
-    }, {
-        "src":"images/cheese2.png",
-        "sizes":"72x72"
     }]
 }
