@@ -1,14 +1,14 @@
 {
     "name":"Cheese",
     "short_name":"Cheese",
-    "start_url":"/",
+    "start_url":"/cheese/",
     "display":"standalone",
     "background_color":"#fdfdfd",
     "theme_color":"yellow",
     "orientation":"portrait-primary",
     "description":"Cheese",
     "icons": [{
-        "src":"/images/cheese2.png",
+        "src":"/cheese/images/cheese2.png",
         "sizes":"1096x1096",
         "type":"image/png"
     }]
