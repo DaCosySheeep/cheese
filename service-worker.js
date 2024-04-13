@@ -5,8 +5,7 @@ self.addEventListener('install', function(event) {
                 '/cheese/',
                 '/cheese/index.html',
                 '/cheese/images/',
-                '/cheese/sounds/',
-                '/cheese/'
+                '/cheese/sounds/'
             ]);
         })
     );
