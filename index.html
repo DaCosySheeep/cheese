@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Cheese</title>
+        <link rel="icon" href="/images/cheese2.png" type="image/png" />
+        <link rel="shortcut icon" href="/images/cheese2.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/images/cheese2.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/cheese2.png" />
+        <meta name="description" content="Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese">
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .button {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button onclick="show()" class="button">We like cheese</button>
+            <img id="image" src="" />
+        </div>
+        <audio id="sound">
+            <source src="" type="audio/mpeg">
+        </audio>
+
+        <script>
+            var shown = false;
+            function show() {
+                var r = Math.floor(Math.random()*34)+1;
+                var img=document.getElementById('image');
+                var sound=document.getElementById('sound');
+
+                if (r===34) {
+                    r=Math.floor(Math.random()*34)+1;
+                }
+
+                if (r===34) {
+                    img.src='images/potato.png';
+                    sound.src='sounds/imposter.mp3';
+                } else {
+                    img.src='images/cheese'+r+'.png';
+                    sound.src='sounds/cheese'+r+'.mp3';
+                }
+                shown=true;
+                sound.play()
+            }
+        </script>
+    </body>
+</html>
