@@ -19,3 +19,10 @@ self.addEventListener('fetch', function(event) {
         })
     );
 });
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt=e;
+})
