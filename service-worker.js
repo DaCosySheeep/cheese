@@ -2,10 +2,7 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open('my-cache').then(function(cache) {
             return cache.addAll([
-                '/cheese/',
-                '/cheese/index.html',
-                '/cheese/images/',
-                '/cheese/sounds/'
+                '/cheese/'
             ]);
         })
     );
