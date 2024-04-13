@@ -38,6 +38,13 @@
             if ('serviceWorker' in navigator) {
                 navigator.serviceWorker.register('/cheese/service-worker.js', {scope: '/cheese/'});
             }
+            
+            let deferredPrompt;
+
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPrompt=e;
+            })
 
             var shown = false;
             function show() {
