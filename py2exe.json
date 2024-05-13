@@ -18,8 +18,12 @@
    "value": false
   },
   {
+   "optionDest": "icon_file",
+   "value": "C:/Users/tjgor/Documents/Programming/cheese/images/cheese.ico"
+  },
+  {
    "optionDest": "name",
-   "value": "Cheese-2.0"
+   "value": "Cheese-2.2"
   },
   {
    "optionDest": "clean_build",
