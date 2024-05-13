@@ -16,12 +16,13 @@ def resource_path(relative_path):
 
 pygame.mixer.init()
 root=Tk()
-try:
+'''try:
     root.state('zoomed')
 except:
-    root.attributes('-zoomed', True)
+    root.attributes('-zoomed', True)'''
 root.title("Load Cheese")
-root.geometry("40x60")
+root.geometry("600x500")
+root.iconbitmap(resource_path("images/cheese.ico"))
 
 imageshown=False
 def show_cheese():
