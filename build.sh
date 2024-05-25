@@ -1,0 +1,1 @@
+pyinstaller --noconfirm --onefile --windowed --icon "images/cheese.ico" --name "Cheese-2.2" --add-data="sounds:sounds/" --add-data="images:images/"  "main.py"

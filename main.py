@@ -22,7 +22,13 @@ except:
     root.attributes('-zoomed', True)'''
 root.title("Load Cheese")
 root.geometry("600x500")
-root.iconbitmap(resource_path("images/cheese.ico"))
+try:
+    root.iconbitmap(resource_path("images/cheese.ico"))
+except:
+    try:
+        root.iconbitmap(resource_path("images/cheese.xbm"))
+    except:
+        print("Error loading icon")
 
 imageshown=False
 def show_cheese():
