@@ -27,7 +27,7 @@
     </head>
     <body>
         <div class="container">
-            <button onclick="show()" class="button">We like cheese</button>
+            <button onclick="show()" class="button" id="button">We like cheese</button>
             <img id="image" src="" alt="Press the button" />
         </div>
         <audio id="sound">
@@ -45,6 +45,9 @@
                 e.preventDefault();
                 deferredPrompt=e;
             })
+            window.addEventListener('load', function() {
+                document.getElementById('button').focus();
+            });
 
             var shown = false;
             function show() {
