@@ -32,16 +32,24 @@
             <button onclick="show()" class="button" id="button" tabindex="0">We like cheese</button>
             <img id="image" src="" alt="Press the button" />
         </div>
+        <div id="debug-output" style="position: fixed; bottom: 0; right: 0;"></div>
         <audio id="sound">
             <source src="" type="audio/mpeg">
         </audio>
 
         <script>
+            var debugOutput = document.getElementById('debug-output');
+            function log(message){
+                debugOutput.innerHTML += message + '<br>';
+            }
             //LG webOS TV code
             if (typeof webOS !== 'undefined' && typeof webOS.remoteControlManager !== 'undefined') {
+                log('webOS.remoteControlManager !== undefined');
                 var button = document.getElementById('button');
                 var remoteControlManager = new LGWebOSRemoteControlManager();
                 remoteControlManager.setFocusedElement(button);
+            } else {
+                log('webOS TV not detected');
             }
 
 
