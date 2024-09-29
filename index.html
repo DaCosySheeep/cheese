@@ -14,6 +14,8 @@
         <link rel="apple-touch-icon" sizes="152x152" href="/cheese/images/cheese2.png" />
         <link rel="manifest" href="/cheese/manifest.json">
         <meta name="description" content="Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese">
+
+        <meta name="webOS-api-version" content="2">
         <style>
             .container {
                 display: flex;
@@ -27,7 +29,7 @@
     </head>
     <body>
         <div class="container">
-            <button onclick="show()" class="button lgFocus" id="button" tabindex="0">We like cheese</button>
+            <button onclick="show()" class="button" id="button" tabindex="0">We like cheese</button>
             <img id="image" src="" alt="Press the button" />
         </div>
         <audio id="sound">
@@ -35,6 +37,14 @@
         </audio>
 
         <script>
+            //LG webOS TV code
+            if (typeof webOS !== 'undefined' && typeof webOS.remoteControlManager !== 'undefined') {
+                var button = document.getElementById('button');
+                var remoteControlManager = new LGWebOSRemoteControlManager();
+                remoteControlManager.setFocusedElement(button);
+            }
+
+
             if ('serviceWorker' in navigator) {
                 navigator.serviceWorker.register('/cheese/service-worker.js', {scope: '/cheese/'});
             }
