@@ -71,3 +71,20 @@ h1 {
     padding: 0.3rem 1rem;
     border-radius: 20px;
 }
+
+button {
+    vertical-align: top;
+    background-color: grey;
+    color: yellow;
+    border: 2px solid yellow;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
+
+#image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

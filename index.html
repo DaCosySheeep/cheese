@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="theme-color" content="yellow" />
-        <link rel="stylesheet" href="/cheese/css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
 
         <title>Cheese</title>
-        <link rel="icon" href="/cheese/images/cheese2.png" type="image/png" />
-        <link rel="shortcut icon" href="/cheese/images/cheese2.png" type="image/png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="/cheese/images/cheese2.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="/cheese/images/cheese2.png" />
-        <link rel="manifest" href="/cheese/manifest.json">
+        <link rel="icon" href="./images/cheese2.png" type="image/png" />
+        <link rel="shortcut icon" href="./images/cheese2.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="./images/cheese2.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="./images/cheese2.png" />
+        <link rel="manifest" href="./manifest.json">
         <meta name="description" content="Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese Cheese">
 
         <meta name="webOS-api-version" content="2">
@@ -28,7 +28,7 @@
         </style>
     </head>
     <body>
-        <div class="container" style="background-color: darkgray;">
+        <div class="container">
             <button onclick="show()" class="button" id="button" tabindex="0">We like cheese</button>
             <img id="image" src="" alt="Press the button" />
         </div>
@@ -48,10 +48,7 @@
                 var button = document.getElementById('button');
                 var remoteControlManager = new LGWebOSRemoteControlManager();
                 remoteControlManager.setFocusedElement(button);
-            } else {
-                log('webOS TV not detected');
             }
-
 
             if ('serviceWorker' in navigator) {
                 navigator.serviceWorker.register('/cheese/service-worker.js', {scope: '/cheese/'});
